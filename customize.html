@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customize Your Clothes</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <h1>Customize Your Clothes</h1>
+
+  <div class="tailor-list">
+    <div class="tailor-card">
+      <span>Tailor Riya (Chennai)</span>
+      <button class="select-tailor" data-form-id="form-riya">Select Tailor</button>
+    </div>
+    <div class="tailor-card">
+      <span>Tailor Arjun (Coimbatore)</span>
+      <button class="select-tailor" data-form-id="form-arjun">Select Tailor</button>
+    </div>
+    <div class="tailor-card">
+      <span>Tailor Meera (Madurai)</span>
+      <button class="select-tailor" data-form-id="form-meera">Select Tailor</button>
+    </div>
+  </div>
+
+  <!-- Forms hidden initially -->
+  <div id="form-container">
+
+    <!-- Tailor Riya Form -->
+    <form action="https://formspree.io/f/manerywv" method="POST" class="tailor-form" id="form-riya">
+      <h3>Send to Tailor Riya</h3>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="tel" name="phone" placeholder="Your Phone Number" required pattern="^\d{10}$" title="Please enter a valid 10-digit phone number">
+      <textarea name="requirements" placeholder="Describe your customization..." required></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <!-- Tailor Arjun Form -->
+    <form action="https://formspree.io/f/yourArjunID" method="POST" class="tailor-form" id="form-arjun">
+      <h3>Send to Tailor Arjun</h3>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="tel" name="phone" placeholder="Your Phone Number" required pattern="^\d{10}$" title="Please enter a valid 10-digit phone number">
+      <textarea name="requirements" placeholder="Describe your customization..." required></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <!-- Tailor Meera Form -->
+    <form action="https://formspree.io/f/yourMeeraID" method="POST" class="tailor-form" id="form-meera">
+      <h3>Send to Tailor Meera</h3>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="tel" name="phone" placeholder="Your Phone Number" required pattern="^\d{10}$" title="Please enter a valid 10-digit phone number">
+      <textarea name="requirements" placeholder="Describe your customization..." required></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+  </div>
+
+</body>
+</html>
